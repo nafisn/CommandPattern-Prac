@@ -1,3 +1,5 @@
+package Lights;
+
 public class RemoteControl {
 
     private Command command;

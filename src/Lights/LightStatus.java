@@ -1,3 +1,5 @@
+package Lights;
+
 public class LightStatus implements Command{
 
     Light light;

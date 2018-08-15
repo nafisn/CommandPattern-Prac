@@ -1,3 +1,5 @@
+package Lights;
+
 public class LightOffCommand implements Command {
 
     Light light;

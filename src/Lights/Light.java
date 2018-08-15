@@ -1,3 +1,5 @@
+package Lights;
+
 public class Light {
 
     private boolean on = false;

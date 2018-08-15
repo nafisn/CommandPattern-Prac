@@ -1,3 +1,5 @@
+package Lights;
+
 import java.util.*;
 
 public class Client {

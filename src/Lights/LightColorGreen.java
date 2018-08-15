@@ -1,3 +1,5 @@
+package Lights;
+
 public class LightColorGreen implements Command {
 
     Light light;
