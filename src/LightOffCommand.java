@@ -8,4 +8,8 @@ public class LightOffCommand implements Command {
     public void execute() {
         light.switchOff();
     }
+
+    public void undo(){
+        light.switchOn();
+    }
 }

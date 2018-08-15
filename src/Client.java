@@ -1,7 +1,4 @@
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 public class Client {
 
@@ -20,28 +17,36 @@ public class Client {
         Command colorBlue = new LightColorBlue(light);
 
 
-        Deque<Command> commands = new ArrayDeque<>();
-        commands.push(status);
-        commands.push(lightsOn);
-        commands.push(colorBlue);
-        commands.push(status);
-        commands.push(lightsOff);
-        commands.push(status);
-        commands.push(colorGreen);
-        commands.push(lightsOn);
-        commands.push(status);
-        commands.push(colorRed);
-        commands.push(status);
-        commands.push(lightsOff);
-        commands.push(status);
+        List<Command> commands = new ArrayList<>();
+        commands.add(status);
+        commands.add(lightsOn);
+        commands.add(colorBlue);
+        commands.add(status);
+        commands.add(lightsOff);
+        commands.add(status);
+        commands.add(colorGreen);
+        commands.add(lightsOn);
+        commands.add(status);
+        commands.add(colorRed);
+        commands.add(status);
+        commands.add(lightsOff);
+        commands.add(status);
 
-        //switch on
-        control.setCommand(lightsOn);
-        control.pressButton();
 
-        //switch off
-        control.setCommand(lightsOff);
-        control.pressButton();
+        for(Command c: commands){
+
+            control.setCommand(c);
+            control.pressButton();
+
+        }
+
+        System.out.println("Done\n");
+
+        for (int i = commands.size()-1; i >= 0; i--){
+            control.setCommand(commands.get(i));
+            control.pressUndo();
+        }
+
 
     }
 }

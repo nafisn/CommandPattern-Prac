@@ -8,4 +8,8 @@ public class LightStatus implements Command{
     public void execute() {
         light.showStatus();
     }
+
+    public void undo(){
+        light.showStatus();
+    }
 }

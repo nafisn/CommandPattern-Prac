@@ -8,4 +8,8 @@ public class LightColorGreen implements Command {
     public void execute() {
         light.color("Green");
     }
+
+    public void undo(){
+        light.color("White");
+    }
 }

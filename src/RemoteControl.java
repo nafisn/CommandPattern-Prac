@@ -7,4 +7,5 @@ public class RemoteControl {
     public void pressButton(){
         command.execute();
     }
+    public void pressUndo(){command.undo();}
 }

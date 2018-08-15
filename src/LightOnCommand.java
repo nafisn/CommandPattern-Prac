@@ -6,6 +6,10 @@ public class LightOnCommand implements Command {
     }
 
     public void execute() {
+        light.switchOn();
+    }
+
+    public void undo(){
         light.switchOff();
     }
 }

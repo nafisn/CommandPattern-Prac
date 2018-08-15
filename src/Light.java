@@ -1,6 +1,6 @@
 public class Light {
 
-    private boolean on;
+    private boolean on = false;
     private String color = "White";
     public void switchOn(){
         on = true;
@@ -15,8 +15,7 @@ public class Light {
 
     public void showStatus(){
         if (this.on){
-            System.out.println("The light is on.");
-            System.out.println("The color is white.");
+            System.out.println("The light is on and the color is " + color);
         } else {
             System.out.println("The light is off.");
         }

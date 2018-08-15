@@ -9,4 +9,8 @@ public class LightColorRed implements Command {
         light.color("Red");
     }
 
+    public void undo(){
+        light.color("White");
+    }
+
 }
