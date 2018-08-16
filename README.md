@@ -1,5 +1,5 @@
-## Lights.Command Pattern
-This lab will aim to teach you about a behavioral design pattern known as the Lights.Command Pattern. 
+## Command Pattern
+This lab will aim to teach you about a behavioral design pattern known as theCommand Pattern. 
 Behavioral design patterns aim to manage some kind of relationship or responsibility between objects.
 As with any design pattern, before you decide to implement it, you should think about the problem you
 are facing.
